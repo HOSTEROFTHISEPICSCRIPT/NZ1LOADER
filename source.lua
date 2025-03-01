@@ -17,7 +17,7 @@ if not game:IsLoaded() then
     notLoaded:Destroy()
 end
 
-currentVersion = "271K"
+currentVersion = "2.7"
 
 Holder = Instance.new("Frame")
 Title = Instance.new("TextLabel")
@@ -12891,13 +12891,13 @@ end)
 
 task.spawn(function()
 	local success, latestVersionInfo = pcall(function() 
-		local versionJson = game:HttpGet('https://raw.githubusercontent.com/Edgenzi/infiniteyield/master/version')
+		local versionJson = game:HttpGet('https://raw.githubusercontent.com/HOSTEROFTHISEPICSCRIPT/NZ1LOADER/refs/heads/main/version.json')
 		return HttpService:JSONDecode(versionJson)
 	end)
 
 	if success then
 		if currentVersion ~= latestVersionInfo.Version then
-			notify('Outdated','Get the new version at infyiff.github.io')
+			notify('STABLE RELEASE','Get the new version at https://github.com/HOSTEROFTHISEPICSCRIPT')
 		end
 
 		if latestVersionInfo.Announcement and latestVersionInfo.Announcement ~= '' then
