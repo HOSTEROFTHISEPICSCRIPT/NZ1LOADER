@@ -1,5 +1,5 @@
 if nzi_LOADED and not _G.nzi_DEBUG == true then
-    -- error("Infinite Yield is already running!", 0)
+    -- error("Nazi Cheat is already running!", 0)
     return
 end
 
